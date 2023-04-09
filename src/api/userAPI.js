@@ -1,10 +1,10 @@
 import axiosClient from './axiosClient';
 
-const userApi = {
+const userAPI = {
 	fetchUser(params) {
 		const url = '/user';
 		return axiosClient.get(url, { params });
 	},
 };
 
-export default userApi;
+export default userAPI;

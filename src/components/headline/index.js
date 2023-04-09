@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
-import { addPost, setPosts } from '../../features/posts/postsSlice';
+import { addPosts } from '../../features/posts/postsSlice';
 import { fetchUser } from '../../features/user/userSlice';
 
 export default function Headline({header, desc, tempArr}) {
@@ -14,16 +14,17 @@ export default function Headline({header, desc, tempArr}) {
 		<div data-test='headlineComponent'>
 			<h1 data-test='header'>{header}</h1>
 			<p data-test='description'>{desc}</p>
-			<button
+			{/* <button
 				type='button'
 				onClick={() => {
-					// dispatch(fetchUser());
-					// dispatch(setPosts({title: 'new'}));
-					// dispatch(addPost({title: 'new'}));
+					// dispatch(addPosts([
+					// 	{title: 'new'}, 
+					// 	{title: 'new 1'}
+					// ]));
 				}}
 			>
 				Click to fetch user
-			</button>
+			</button> */}
 		</div>
 	)
 }
